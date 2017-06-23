@@ -10,16 +10,21 @@ public class ProductVO {
 	private String title;
 	private String price;
 	private String content;
+<<<<<<< HEAD
+	private String area;	//ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½
+	private HashtagVO hashTagVO;
+=======
 	private String area;	//°ø°£ ÁÖ¼Ò
 	private HashtagVO hashtagVO;
+>>>>>>> f53906d24fdd54d0f72d6f37dc83de0be4639f22
 	private MultipartFile upload;
-	private String date;	//¿¹¾à³¯Â¥
-	private String category;//Ä«Æä, ¼Ò¸ðÀÓ°ø°£, °­ÀÇ½Ç  °ø°£Á¾·ù µîµî
-	private String crn;		//»ç¾÷ÀÚµî·Ï¹øÈ£
-	private String location; //map Áöµµ À§Ä¡
-	private String type;	//ÈÞÅ×Å©. ÀÏ¹Ý°ø°£ »óÇ°
-	private String time;	//¿¹¾à½Ã°£
-	private String tel;		//ÆÇ¸ÅÀÚ ¹øÈ£
+	private String date;	//ï¿½ï¿½ï¿½à³¯Â¥
+	private String category;//Ä«ï¿½ï¿½, ï¿½Ò¸ï¿½ï¿½Ó°ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½Ç½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+	private String crn;		//ï¿½ï¿½ï¿½ï¿½Úµï¿½Ï¹ï¿½È£
+	private String location; //map ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡
+	private String type;	//ï¿½ï¿½ï¿½ï¿½Å©. ï¿½Ï¹Ý°ï¿½ï¿½ï¿½ ï¿½ï¿½Ç°
+	private String time;	//ï¿½ï¿½ï¿½ï¿½Ã°ï¿½
+	private String tel;		//ï¿½Ç¸ï¿½ï¿½ï¿½ ï¿½ï¿½È£
 	
 	
 	
@@ -94,6 +99,12 @@ public class ProductVO {
 		this.hashtagVO = hashtagVO;
 =======
 	public HashtagVO getHashTagVO() {
+<<<<<<< HEAD
+		return hashTagVO;
+	}
+	public void setHashTagVO(HashtagVO hashTagVO) {
+		this.hashTagVO = hashTagVO;
+=======
 		return hashtagVO;
 	}
 	public void setHashTagVO(HashtagVO hashTagVO) {

@@ -18,7 +18,7 @@ public class SpaceUserVO {
 	private PointVO pointVO;
 	private AuctionVO auctionVO;
 	private List<ProductVO> pList;
-	private String crn; //�궗�뾽�옄�벑濡앸쾲�샇
+	private String crn; //占쎄텢占쎈씜占쎌쁽占쎈쾻嚥≪빖苡뀐옙�깈
 	private List<BoardVO> bList;
 	private List<ComplainVO> cList;
 	private List<ReviewVO> rList;

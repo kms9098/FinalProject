@@ -1,14 +1,14 @@
 package space.adeal.domain;
 
-public class adealVO {
+public class AdealVO {
 	private int aNo;
 	private String id;
 	private String fPrice;
 	
 	
-	public adealVO() {
+	public AdealVO() {
 	}
-	public adealVO(int aNo, String id, String fPrice) {
+	public AdealVO(int aNo, String id, String fPrice) {
 		super();
 		this.aNo = aNo;
 		this.id = id;

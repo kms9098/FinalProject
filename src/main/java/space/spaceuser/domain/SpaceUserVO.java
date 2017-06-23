@@ -6,10 +6,7 @@ import space.auction.domain.AuctionVO;
 import space.board.domain.BoardVO;
 import space.complain.domain.ComplainVO;
 import space.point.domain.PointVO;
-<<<<<<< HEAD
 import space.product.domain.ProductVO;
-=======
->>>>>>> 175eb7e4c00554270e0ea97a7414e5bd672c58d7
 import space.review.domain.ReviewVO;
 
 public class SpaceUserVO {

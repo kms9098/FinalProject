@@ -6,7 +6,10 @@ import space.auction.domain.AuctionVO;
 import space.board.domain.BoardVO;
 import space.complain.domain.ComplainVO;
 import space.point.domain.PointVO;
+<<<<<<< HEAD
 import space.product.domain.ProductVO;
+=======
+>>>>>>> 175eb7e4c00554270e0ea97a7414e5bd672c58d7
 import space.review.domain.ReviewVO;
 
 public class SpaceUserVO {
@@ -18,7 +21,7 @@ public class SpaceUserVO {
 	private PointVO pointVO;
 	private AuctionVO auctionVO;
 	private List<ProductVO> pList;
-	private String crn; //사업자등록번호
+	private String crn; //�궗�뾽�옄�벑濡앸쾲�샇
 	private List<BoardVO> bList;
 	private List<ComplainVO> cList;
 	private List<ReviewVO> rList;

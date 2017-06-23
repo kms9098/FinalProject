@@ -4,7 +4,11 @@
 	
 <configuration>
 	<!-- Unit Test시 필요함. -->
+<<<<<<< HEAD
 	<properties resource="config/jdbc.properties"/>
+=======
+	 <properties resource="config/jdbc.properties"/>
+>>>>>>> 3e684988e1f87adc9d52f6baa51a05a421944636
  	<settings>
 		<setting name="jdbcTypeForNull" value="NULL"/>
 	</settings>
@@ -24,7 +28,11 @@
 	</typeAliases>
 	
 	<!-- Unit Test시 필요함. -->
+<<<<<<< HEAD
 	 <environments default="haha">
+=======
+	<environments default="haha">
+>>>>>>> 3e684988e1f87adc9d52f6baa51a05a421944636
 		<environment id="haha">
 			<transactionManager type="JDBC"/>
 			<dataSource type="UNPOOLED">
@@ -34,7 +42,11 @@
 				<property name="password" value="${JDBC.password}"/>
 			</dataSource>
 		</environment>
+<<<<<<< HEAD
 	</environments> 
+=======
+	</environments>
+>>>>>>> 3e684988e1f87adc9d52f6baa51a05a421944636
 	<mappers>
 		
 	</mappers>

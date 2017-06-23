@@ -2,6 +2,10 @@ package space.spaceuser.domain;
 
 import java.util.List;
 
+import space.board.domain.BoardVO;
+import space.complain.domain.ComplainVO;
+import space.review.domain.ReviewVO;
+
 public class SpaceUserVO {
 	private String id;
 	private String password;

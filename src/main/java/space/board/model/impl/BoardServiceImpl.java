@@ -4,7 +4,7 @@ import java.util.List;
 
 import space.board.domain.BoardVO;
 
-public class BoardDAOImpl implements BoardDAO{
+public class BoardServiceImpl implements BoardService{
 
 	@Override
 	public List searchFAQ(String category, String word) throws Exception {
@@ -35,5 +35,5 @@ public class BoardDAOImpl implements BoardDAO{
 	public List searchNotice(String word) throws Exception {
 		return null;
 	}
-	
+
 }

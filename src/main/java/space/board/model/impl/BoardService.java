@@ -4,7 +4,7 @@ import java.util.List;
 
 import space.board.domain.BoardVO;
 
-public interface BoardDAO {
+public interface BoardService {
 	/** FAQ 검색 */
 	public List searchFAQ(String category, String word) throws Exception;	// word로 title 과 content 둘다 검색한다.
 	/** 특정 FAQ 조회 */

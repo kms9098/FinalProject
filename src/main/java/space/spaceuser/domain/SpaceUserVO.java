@@ -6,6 +6,7 @@ import space.auction.domain.AuctionVO;
 import space.board.domain.BoardVO;
 import space.complain.domain.ComplainVO;
 import space.point.domain.PointVO;
+import space.product.domain.ProductVO;
 import space.review.domain.ReviewVO;
 
 public class SpaceUserVO {
@@ -17,7 +18,7 @@ public class SpaceUserVO {
 	private PointVO pointVO;
 	private AuctionVO auctionVO;
 	private List<ProductVO> pList;
-	private String crn; //�궗�뾽�옄�벑濡앸쾲�샇
+	private String crn; //占쎄텢占쎈씜占쎌쁽占쎈쾻嚥≪빖苡뀐옙�깈
 	private List<BoardVO> bList;
 	private List<ComplainVO> cList;
 	private List<ReviewVO> rList;

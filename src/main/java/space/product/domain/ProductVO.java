@@ -10,7 +10,7 @@ public class ProductVO {
 	private String title;
 	private String price;
 	private String content;
-<<<<<<< HEAD
+
 	private String area;	//���� �ּ�
 	private HashtagVO hashtagVO;
 	private MultipartFile upload;
@@ -21,21 +21,7 @@ public class ProductVO {
 	private String type;	//����ũ. �Ϲݰ��� ��ǰ
 	private String time;	//����ð�
 	private String tel;		//�Ǹ��� ��ȣ
-=======
-	private String area;	//공간 주소
-	private HashtagVO hashtagVO;
-	private MultipartFile upload;
-	private String date;	//占쏙옙占썅날짜
-	private String category;//카占쏙옙, 占쌀몌옙占쌈곤옙占쏙옙, 占쏙옙占실쏙옙  占쏙옙占쏙옙占쏙옙占쏙옙 占쏙옙占�
-	private String crn;		//占쏙옙占쏙옙湄占싹뱄옙호
-	private String location; //map 占쏙옙占쏙옙 占쏙옙치
-	private String type;	//占쏙옙占쏙옙크. 占싹반곤옙占쏙옙 占쏙옙품
-	private String time;	//占쏙옙占쏙옙챨占�
-	private String tel;		//占실몌옙占쏙옙 占쏙옙호
-	
-	
->>>>>>> 2e151a38193e066c3d49dc0873ca41557381345c
-	
+
 	public ProductVO(int pNo, String title, String price, String content, String area, HashtagVO hashtagVO,
 			MultipartFile upload, String date, String category, String crn, String location, String type, String time,
 			String tel) {

@@ -2,8 +2,11 @@ package space.spaceuser.domain;
 
 import java.util.List;
 
+import space.auction.domain.AuctionVO;
 import space.board.domain.BoardVO;
 import space.complain.domain.ComplainVO;
+import space.point.domain.PointVO;
+import space.product.domain.ProductVO;
 import space.review.domain.ReviewVO;
 
 public class SpaceUserVO {

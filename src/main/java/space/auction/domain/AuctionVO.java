@@ -2,7 +2,7 @@ package space.auction.domain;
 
 import org.springframework.web.multipart.MultipartFile;
 
-public class auctionVO {
+public class AuctionVO {
 	private int aNo;
 	private String price;
 	private String content;
@@ -15,10 +15,10 @@ public class auctionVO {
 	private String confirm;
 	private String title;
 	
-	public auctionVO() {
+	public AuctionVO() {
 		
 	}
-	public auctionVO(int aNo, String price, String content, String area, MultipartFile multipartFile, String location,
+	public AuctionVO(int aNo, String price, String content, String area, MultipartFile multipartFile, String location,
 			String tel, String crn, String aDate, String confirm, String title) {
 		super();
 		this.aNo = aNo;

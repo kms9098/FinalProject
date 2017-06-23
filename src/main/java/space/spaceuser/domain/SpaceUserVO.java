@@ -22,6 +22,7 @@ public class SpaceUserVO {
 	private List<BoardVO> bList;
 	private List<ComplainVO> cList;
 	private List<ReviewVO> rList;
+	private String grade;
 	
 	public SpaceUserVO() {
 		super();
@@ -29,7 +30,7 @@ public class SpaceUserVO {
 
 	public SpaceUserVO(String id, String password, String tel, String name, String address, PointVO pointVO,
 			AuctionVO auctionVO, List<ProductVO> pList, String crn, List<BoardVO> bList, List<ComplainVO> cList,
-			List<ReviewVO> rList) {
+			List<ReviewVO> rList, String grade) {
 		super();
 		this.id = id;
 		this.password = password;
@@ -43,109 +44,175 @@ public class SpaceUserVO {
 		this.bList = bList;
 		this.cList = cList;
 		this.rList = rList;
+		this.grade = grade;
 	}
+
+
 
 	public String getId() {
 		return id;
 	}
 
+
+
 	public void setId(String id) {
 		this.id = id;
 	}
+
+
 
 	public String getPassword() {
 		return password;
 	}
 
+
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+
 
 	public String getTel() {
 		return tel;
 	}
 
+
+
 	public void setTel(String tel) {
 		this.tel = tel;
 	}
+
+
 
 	public String getName() {
 		return name;
 	}
 
+
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
+
 
 	public String getAddress() {
 		return address;
 	}
 
+
+
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
+
 
 	public PointVO getPointVO() {
 		return pointVO;
 	}
 
+
+
 	public void setPointVO(PointVO pointVO) {
 		this.pointVO = pointVO;
 	}
+
+
 
 	public AuctionVO getAuctionVO() {
 		return auctionVO;
 	}
 
+
+
 	public void setAuctionVO(AuctionVO auctionVO) {
 		this.auctionVO = auctionVO;
 	}
+
+
 
 	public List<ProductVO> getpList() {
 		return pList;
 	}
 
+
+
 	public void setpList(List<ProductVO> pList) {
 		this.pList = pList;
 	}
+
+
 
 	public String getCrn() {
 		return crn;
 	}
 
+
+
 	public void setCrn(String crn) {
 		this.crn = crn;
 	}
+
+
 
 	public List<BoardVO> getbList() {
 		return bList;
 	}
 
+
+
 	public void setbList(List<BoardVO> bList) {
 		this.bList = bList;
 	}
+
+
 
 	public List<ComplainVO> getcList() {
 		return cList;
 	}
 
+
+
 	public void setcList(List<ComplainVO> cList) {
 		this.cList = cList;
 	}
+
+
 
 	public List<ReviewVO> getrList() {
 		return rList;
 	}
 
+
+
 	public void setrList(List<ReviewVO> rList) {
 		this.rList = rList;
 	}
 
+
+
+	public String getGrade() {
+		return grade;
+	}
+
+
+
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+
+
+
 	@Override
 	public String toString() {
 		return "SpaceUserVO [id=" + id + ", password=" + password + ", tel=" + tel + ", name=" + name + ", address="
-				+ address + ", crn=" + crn + "]";
+				+ address + ", pointVO=" + pointVO + ", auctionVO=" + auctionVO + ", pList=" + pList + ", crn=" + crn
+				+ ", bList=" + bList + ", cList=" + cList + ", rList=" + rList + ", grade=" + grade + "]";
 	}
+
+
 
 	
 }

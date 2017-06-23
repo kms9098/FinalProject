@@ -24,7 +24,11 @@ public class ProductVO {
 	
 	
 	
+<<<<<<< HEAD
 	public ProductVO(int pNo, String title, String price, String content, String area, HashtagVO hashtagVO,
+=======
+	public ProductVO(int pNo, String title, String price, String content, String area, HashtagVO hashTagVO,
+>>>>>>> f53906d24fdd54d0f72d6f37dc83de0be4639f22
 			MultipartFile upload, String date, String category, String crn, String location, String type, String time,
 			String tel) {
 		super();
@@ -33,7 +37,11 @@ public class ProductVO {
 		this.price = price;
 		this.content = content;
 		this.area = area;
+<<<<<<< HEAD
 		this.hashtagVO = hashtagVO;
+=======
+		this.hashtagVO = hashTagVO;
+>>>>>>> f53906d24fdd54d0f72d6f37dc83de0be4639f22
 		this.upload = upload;
 		this.date = date;
 		this.category = category;
@@ -78,11 +86,19 @@ public class ProductVO {
 	public void setArea(String area) {
 		this.area = area;
 	}
+<<<<<<< HEAD
 	public HashtagVO getHashtagVO() {
 		return hashtagVO;
 	}
 	public void setHashtagVO(HashtagVO hashtagVO) {
 		this.hashtagVO = hashtagVO;
+=======
+	public HashtagVO getHashTagVO() {
+		return hashtagVO;
+	}
+	public void setHashTagVO(HashtagVO hashTagVO) {
+		this.hashtagVO = hashTagVO;
+>>>>>>> f53906d24fdd54d0f72d6f37dc83de0be4639f22
 	}
 	public MultipartFile getUpload() {
 		return upload;

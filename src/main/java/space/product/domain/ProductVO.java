@@ -10,48 +10,20 @@ public class ProductVO {
 	private String title;
 	private String price;
 	private String content;
-<<<<<<< HEAD
-	private String area;	//���� �ּ�
-	private HashtagVO hashTagVO;
-=======
-<<<<<<< HEAD
-	private String area;	//���� �ּ�
+	private String area;	//공간 주소
 	private HashtagVO hashtagVO;
-=======
-<<<<<<< HEAD
-	private String area;	//���� �ּ�
-	private HashtagVO hashTagVO;
-=======
-	private String area;	//���� �ּ�
-	private HashtagVO hashtagVO;
->>>>>>> f53906d24fdd54d0f72d6f37dc83de0be4639f22
->>>>>>> d997d13c06180620489b262c6b729564599c882b
->>>>>>> a6e1c7fc7c745fd204f1c1134221753118d7dd77
 	private MultipartFile upload;
-	private String date;	//���೯¥
-	private String category;//ī��, �Ҹ��Ӱ���, ���ǽ�  �������� ���
-	private String crn;		//����ڵ�Ϲ�ȣ
-	private String location; //map ���� ��ġ
-	private String type;	//����ũ. �Ϲݰ��� ��ǰ
-	private String time;	//����ð�
-	private String tel;		//�Ǹ��� ��ȣ
+	private String date;	//占쏙옙占썅날짜
+	private String category;//카占쏙옙, 占쌀몌옙占쌈곤옙占쏙옙, 占쏙옙占실쏙옙  占쏙옙占쏙옙占쏙옙占쏙옙 占쏙옙占�
+	private String crn;		//占쏙옙占쏙옙湄占싹뱄옙호
+	private String location; //map 占쏙옙占쏙옙 占쏙옙치
+	private String type;	//占쏙옙占쏙옙크. 占싹반곤옙占쏙옙 占쏙옙품
+	private String time;	//占쏙옙占쏙옙챨占�
+	private String tel;		//占실몌옙占쏙옙 占쏙옙호
 	
 	
 	
-	
-<<<<<<< HEAD
-	public ProductVO(int pNo, String title, String price, String content, String area, HashtagVO hashTagVO,
-=======
-<<<<<<< HEAD
 	public ProductVO(int pNo, String title, String price, String content, String area, HashtagVO hashtagVO,
-=======
-<<<<<<< HEAD
-	public ProductVO(int pNo, String title, String price, String content, String area, HashtagVO hashtagVO,
-=======
-	public ProductVO(int pNo, String title, String price, String content, String area, HashtagVO hashTagVO,
->>>>>>> f53906d24fdd54d0f72d6f37dc83de0be4639f22
->>>>>>> d997d13c06180620489b262c6b729564599c882b
->>>>>>> a6e1c7fc7c745fd204f1c1134221753118d7dd77
 			MultipartFile upload, String date, String category, String crn, String location, String type, String time,
 			String tel) {
 		super();
@@ -60,15 +32,7 @@ public class ProductVO {
 		this.price = price;
 		this.content = content;
 		this.area = area;
-<<<<<<< HEAD
 		this.hashtagVO = hashtagVO;
-=======
-<<<<<<< HEAD
-		this.hashtagVO = hashtagVO;
-=======
-		this.hashtagVO = hashTagVO;
->>>>>>> f53906d24fdd54d0f72d6f37dc83de0be4639f22
->>>>>>> d997d13c06180620489b262c6b729564599c882b
 		this.upload = upload;
 		this.date = date;
 		this.category = category;
@@ -78,7 +42,7 @@ public class ProductVO {
 		this.time = time;
 		this.tel = tel;
 	}
-	
+
 	public ProductVO(){
 		
 	}
@@ -113,38 +77,7 @@ public class ProductVO {
 	public void setArea(String area) {
 		this.area = area;
 	}
-<<<<<<< HEAD
-	public HashtagVO getHashTagVO() {
-=======
-<<<<<<< HEAD
-	public HashtagVO getHashTagVO() {
-		return hashtagVO;
-	}
-	public void setHashTagVO(HashtagVO hashTagVO) {
-		this.hashtagVO = hashTagVO;
-=======
-<<<<<<< HEAD
-	public HashtagVO getHashtagVO() {
-		return hashtagVO;
-	}
-	public void setHashtagVO(HashtagVO hashtagVO) {
-		this.hashtagVO = hashtagVO;
-=======
-	public HashtagVO getHashTagVO() {
-<<<<<<< HEAD
->>>>>>> a6e1c7fc7c745fd204f1c1134221753118d7dd77
-		return hashTagVO;
-	}
-	public void setHashTagVO(HashtagVO hashTagVO) {
-		this.hashTagVO = hashTagVO;
-=======
-		return hashtagVO;
-	}
-	public void setHashTagVO(HashtagVO hashTagVO) {
-		this.hashtagVO = hashTagVO;
->>>>>>> f53906d24fdd54d0f72d6f37dc83de0be4639f22
->>>>>>> d997d13c06180620489b262c6b729564599c882b
-	}
+
 	public MultipartFile getUpload() {
 		return upload;
 	}

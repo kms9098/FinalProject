@@ -2,6 +2,8 @@ package space.product.domain;
 
 import org.springframework.web.multipart.MultipartFile;
 
+import space.hashtag.domain.HashtagVO;
+
 public class ProductVO {
 	
 	private int pNo;  //p_no
@@ -9,7 +11,7 @@ public class ProductVO {
 	private String price;
 	private String content;
 	private String area;	//공간 주소
-	private HashTagVO hashTagVO;
+	private HashtagVO hashtagVO;
 	private MultipartFile upload;
 	private String date;	//예약날짜
 	private String category;//카페, 소모임공간, 강의실  공간종류 등등
@@ -22,7 +24,7 @@ public class ProductVO {
 	
 	
 	
-	public ProductVO(int pNo, String title, String price, String content, String area, HashTagVO hashTagVO,
+	public ProductVO(int pNo, String title, String price, String content, String area, HashtagVO hashtagVO,
 			MultipartFile upload, String date, String category, String crn, String location, String type, String time,
 			String tel) {
 		super();
@@ -31,7 +33,7 @@ public class ProductVO {
 		this.price = price;
 		this.content = content;
 		this.area = area;
-		this.hashTagVO = hashTagVO;
+		this.hashtagVO = hashtagVO;
 		this.upload = upload;
 		this.date = date;
 		this.category = category;
@@ -76,11 +78,11 @@ public class ProductVO {
 	public void setArea(String area) {
 		this.area = area;
 	}
-	public HashTagVO getHashTagVO() {
-		return hashTagVO;
+	public HashtagVO getHashtagVO() {
+		return hashtagVO;
 	}
-	public void setHashTagVO(HashTagVO hashTagVO) {
-		this.hashTagVO = hashTagVO;
+	public void setHashtagVO(HashtagVO hashtagVO) {
+		this.hashtagVO = hashtagVO;
 	}
 	public MultipartFile getUpload() {
 		return upload;
@@ -134,12 +136,10 @@ public class ProductVO {
 	@Override
 	public String toString() {
 		return "ProductVO [pNo=" + pNo + ", title=" + title + ", price=" + price + ", content=" + content + ", area="
-				+ area + ", upload=" + upload + ", date=" + date + ", category=" + category + ", crn=" + crn
-				+ ", location=" + location + ", type=" + type + ", time=" + time + ", tel=" + tel + "]";
+				+ area + ", hashtagVO=" + hashtagVO + ", upload=" + upload + ", date=" + date + ", category=" + category
+				+ ", crn=" + crn + ", location=" + location + ", type=" + type + ", time=" + time + ", tel=" + tel
+				+ "]";
 	}
-	
-	
-	
 }
 
 

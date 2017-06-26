@@ -2,20 +2,18 @@ package space.complain.domain;
 
 public class ComplainVO {
 	private String id;
-	private int cNo;
-	private int pNo;
+	private int c_no;
+	private int p_no;
 	private String content;
 	private String title;
 	private String cDate;
-	public ComplainVO() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public ComplainVO(String id, int cNo, int pNo, String content, String title, String cDate) {
+	
+	public ComplainVO(){}
+	public ComplainVO(String id, int c_no, int p_no, String content, String title, String cDate) {
 		super();
 		this.id = id;
-		this.cNo = cNo;
-		this.pNo = pNo;
+		this.c_no = c_no;
+		this.p_no = p_no;
 		this.content = content;
 		this.title = title;
 		this.cDate = cDate;
@@ -26,17 +24,17 @@ public class ComplainVO {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public int getcNo() {
-		return cNo;
+	public int getC_no() {
+		return c_no;
 	}
-	public void setcNo(int cNo) {
-		this.cNo = cNo;
+	public void setC_no(int c_no) {
+		this.c_no = c_no;
 	}
-	public int getpNo() {
-		return pNo;
+	public int getP_no() {
+		return p_no;
 	}
-	public void setpNo(int pNo) {
-		this.pNo = pNo;
+	public void setP_no(int p_no) {
+		this.p_no = p_no;
 	}
 	public String getContent() {
 		return content;
@@ -56,6 +54,10 @@ public class ComplainVO {
 	public void setcDate(String cDate) {
 		this.cDate = cDate;
 	}
-	
+	@Override
+	public String toString() {
+		return "ComplainVO [id=" + id + ", c_no=" + c_no + ", p_no=" + p_no + ", content=" + content + ", title="
+				+ title + ", cDate=" + cDate + "]";
+	}
 	
 }

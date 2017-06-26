@@ -3,91 +3,132 @@ package space.board.domain;
 import org.springframework.web.multipart.MultipartFile;
 
 public class BoardVO {
-	private int bNo;
-	private String id;
-	private String title;
-	private String category;
-	private String bDate;
-	private String content;
-	private MultipartFile multipartFile;
-	
-	public BoardVO() {
-		super();
-	}
+   private int b_no;
+   private String id;
+   private String title;
+   private String category;
+   private String bDate;
+   private String content;
+   private String newfilename;
+   private String originfilename;
+   private MultipartFile multipartFile;
+   private String notice;
+   
+   public BoardVO() {
+      super();
+   }
+   
+   public BoardVO(int b_no, String id, String title, String category, String bDate, String content, String newfilename,
+         String originfilename, String notice) {
+      super();
+      this.b_no = b_no;
+      this.id = id;
+      this.title = title;
+      this.category = category;
+      this.bDate = bDate;
+      this.content = content;
+      this.newfilename = newfilename;
+      this.originfilename = originfilename;
+      this.notice = notice;
+   }
+   
+   public BoardVO(String id, String title, String category, String content, String newfilename,
+         String originfilename, String notice) {
+      super();
+      this.id = id;
+      this.title = title;
+      this.category = category;
+      this.content = content;
+      this.newfilename = newfilename;
+      this.originfilename = originfilename;
+      this.notice = notice;
+   }
 
-	public BoardVO(int bNo, String id, String title, String category, String bDate, String content,
-			MultipartFile multipartFile) {
-		super();
-		this.bNo = bNo;
-		this.id = id;
-		this.title = title;
-		this.category = category;
-		this.bDate = bDate;
-		this.content = content;
-		this.multipartFile = multipartFile;
-	}
+   public int getB_no() {
+      return b_no;
+   }
 
-	public int getbNo() {
-		return bNo;
-	}
+   public void setB_no(int b_no) {
+      this.b_no = b_no;
+   }
 
-	public void setbNo(int bNo) {
-		this.bNo = bNo;
-	}
+   public String getId() {
+      return id;
+   }
 
-	public String getId() {
-		return id;
-	}
+   public void setId(String id) {
+      this.id = id;
+   }
 
-	public void setId(String id) {
-		this.id = id;
-	}
+   public String getTitle() {
+      return title;
+   }
 
-	public String getTitle() {
-		return title;
-	}
+   public void setTitle(String title) {
+      this.title = title;
+   }
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
+   public String getCategory() {
+      return category;
+   }
 
-	public String getCategory() {
-		return category;
-	}
+   public void setCategory(String category) {
+      this.category = category;
+   }
 
-	public void setCategory(String category) {
-		this.category = category;
-	}
+   public String getbDate() {
+      return bDate;
+   }
 
-	public String getbDate() {
-		return bDate;
-	}
+   public void setbDate(String bDate) {
+      this.bDate = bDate;
+   }
 
-	public void setbDate(String bDate) {
-		this.bDate = bDate;
-	}
+   public String getContent() {
+      return content;
+   }
 
-	public String getContent() {
-		return content;
-	}
+   public void setContent(String content) {
+      this.content = content;
+   }
 
-	public void setContent(String content) {
-		this.content = content;
-	}
+   public String getNewfilename() {
+      return newfilename;
+   }
 
-	public MultipartFile getMultipartFile() {
-		return multipartFile;
-	}
+   public void setNewfilename(String newfilename) {
+      this.newfilename = newfilename;
+   }
 
-	public void setMultipartFile(MultipartFile multipartFile) {
-		this.multipartFile = multipartFile;
-	}
+   public String getOriginfilename() {
+      return originfilename;
+   }
 
-	@Override
-	public String toString() {
-		return "BoardVO [bNo=" + bNo + ", id=" + id + ", title=" + title + ", category=" + category + ", bDate=" + bDate
-				+ ", content=" + content + ", multipartFile=" + multipartFile + "]";
-	}
-	
-	
+   public void setOriginfilename(String originfilename) {
+      this.originfilename = originfilename;
+   }
+
+   public MultipartFile getMultipartFile() {
+      return multipartFile;
+   }
+
+   public void setMultipartFile(MultipartFile multipartFile) {
+      this.multipartFile = multipartFile;
+   }
+
+   public String getNotice() {
+      return notice;
+   }
+
+   public void setNotice(String notice) {
+      this.notice = notice;
+   }
+
+   @Override
+   public String toString() {
+      return "BoardVO [b_no=" + b_no + ", id=" + id + ", title=" + title + ", category=" + category + ", bDate="
+            + bDate + ", content=" + content + ", newfilename=" + newfilename + ", originfilename=" + originfilename
+            + ", multipartFile=" + multipartFile + ", notice=" + notice + "]";
+   }
+   
 }

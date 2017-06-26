@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 페이징처리참고 <select id="getBoardList" resultMap="boardListRM"> select no, 
+	title, count, w_date, name from (select no, title, count, w_date, name, CEIL(rownum/#{numberOfContentPerPage}) 
+	page from (select no, title, count, to_char(w_date, 'YYYY.MM.DD') w_date, 
+	name from springboard s, member m where s.id = m.id order by no desc)) where 
+	page=#{nowPage} </select> -->
+<mapper namespace="dealMapper">
+	<!-- deal RM -->
+	<resultMap type="deal" id="dealRM">
+		<result property="d_no" column="d_no" />
+		<result property="p_no" column="p_no" />
+		<result property="sId" column="sId" />
+		<result property="bId" column="bId" />
+		<result property="price" column="price" />
+		<result property="resDate" column="res_date" />
+		<result property="resTime" column="res_time" />
+		<result property="sTel" column="s_tel" />
+		<result property="bTel" column="b_tel" />
+		<result property="title" column="title" />
+		<result property="area" column="area" />
+		<result property="grade" column="grade" />
+		<result property="accept" column="accept" />
+	</resultMap>
+
+	<!-- deal all-column -->
+	<sql id="all-column">
+		d_no,p_no,s_id,b_id,price,res_date,res_time,stel,btel,title,area,grade,accpet
+	</sql>
+
+	<!-- 거래등록(시작) grade는 필요가 없고, 양쪽 승인을 구분할 것이 필요할듯 수정 필요한듯? -->
+	<insert id="registerDeal" parameterType="register">
+		<selectKey keyProperty="d_no" resultType="int" order="BEFORE">
+			SELECT deal_seq.nextVal from dual
+		</selectKey>
+		INSERT INTO deal(
+		<include refid="all-column"></include>
+		) values
+		(#{d_no},#{p_no},#{sId},#{bId},#{price},#{resDate},#{resTime},#{sTel},#{bTel},
+		#{title},#{area},#{grade},NVL(#{accept},0))
+	</insert>
+
+	<!--특정 회원 거래상태 변경 accept가 0이면 거래 시작. accept가 1이면 승인대기 accept가 2이면 거래완료(양쪽승인) -->
+	<update id="updateAccept" parameterType="string">
+		UPDATE deal SET accept=accept+1
+		WHERE s_id=#{value} or b_id=#{value}
+	</update>
+
+	<!-- 특정회원의 거래내역 불러오기 (판매자/구매자)중 자기 아이디가 포함되어있으면 모든 거래내역이 나온다. -->
+	<select id="getAllDealInfo" resultMap="dealRM" parameterType="string">
+		SELECT
+		<include refid="all-column"></include>
+		FROM deal
+		WHERE s_id=#{value} or b_id=#{value}
+	</select>
+
+	<!-- 특정 회원의 거래 상태 불러오기 -->
+	<select id="getDealState" resultType="string" parameterType="string">
+		SELECT accept FROM deal
+		WHERE s_id=#{value} or b_id=#{value}
+	</select>
+
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
